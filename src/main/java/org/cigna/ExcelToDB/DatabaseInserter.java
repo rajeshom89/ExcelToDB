@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DatabaseInserter {
     private static final String URL = "jdbc:mysql://localhost:3306/student";
-    private static final String USER = "rajesh";
+    private static final String USER = "Rajesh";
     private static final String PASSWORD = "Roopa@123";
 
     public static void insertData(String tableName, SheetData sheetData, String sql) throws SQLException {

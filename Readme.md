@@ -107,11 +107,8 @@ java Main data.xlsx Student student_archive
 
 ## Enhancements (TODO)
 
-- Add support for reading all sheets in a file
-- Add command-line flags for DB config
-- Export data from DB to Excel
-- Add logging and error tracking
-- Create GUI version
+- Dynamic Creation Of Table If Not Exists
+- Error Handling And User Centric Error Messages
 
 ---
 
@@ -123,5 +120,5 @@ MIT License — feel free to fork and contribute!
 
 ## Author
 
-**Your Name**  
-[GitHub](https://github.com/your-username)
+**Name**  
+[GitHub](https://github.com/rajeshom89/)
