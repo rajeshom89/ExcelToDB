@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SQLBuilder {
     public static String buildInsertQuery(String tableName, List<String> columns) {
-        StringBuilder sql = new StringBuilder("INSERT INTO ")
+        StringBuilder sql = new StringBuilder("INSERT IGNORE INTO ")
                 .append(tableName.toLowerCase())
                 .append(" (")
                 .append(String.join(", ", columns))

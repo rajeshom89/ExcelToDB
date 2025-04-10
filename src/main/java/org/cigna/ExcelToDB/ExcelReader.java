@@ -14,6 +14,17 @@ public class ExcelReader {
         this.filePath = filePath;
     }
 
+    public List<String> getAllSheetNames() throws Exception {
+        List<String> sheetNames = new ArrayList<>();
+        try (FileInputStream fis = new FileInputStream(filePath);
+             Workbook workbook = new XSSFWorkbook(fis)) {
+            for (int i = 0; i < workbook.getNumberOfSheets(); i++) {
+                sheetNames.add(workbook.getSheetName(i));
+            }
+        }
+        return sheetNames;
+    }
+
     public SheetData readSheet(String sheetName) throws Exception {
         try (FileInputStream fis = new FileInputStream(filePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
